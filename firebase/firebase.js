@@ -1,6 +1,3 @@
-import firebase from 'firebase/app';
-import 'firebase/auth';
-
 const prodConfig = {
     apiKey: YOUR_API_KEY,
     authDomain: YOUR_AUTH_DOMAIN,
@@ -23,12 +20,6 @@ const config = process.env.NODE_ENV === 'production'
     ? prodConfig
     : devConfig;
 
-if (!firebase.apps.length) {
-    firebase.initializeApp(config);
-}
-
-const auth = firebase.auth();
-
 export {
-    auth,
+    config
 };

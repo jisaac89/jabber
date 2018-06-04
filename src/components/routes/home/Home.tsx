@@ -11,8 +11,8 @@ export default class Home extends React.Component<any, any> {
     render() {
         return (
             <Default centerContent>
-                <Toolbar className="w500px center-width">
-                    <Button block theme="primary">Home</Button>
+                <Toolbar className="w500px center-width p10">
+                    <Button block theme="primary">Hello World</Button>
                 </Toolbar>
             </Default>
         );
